@@ -1,0 +1,7 @@
+-------------------------------------------------------------------------------
+Test set: com.zerobank.runners.CukesRunner
+-------------------------------------------------------------------------------
+Tests run: 12, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 291.797 s <<< FAILURE! - in com.zerobank.runners.CukesRunner
+login as a different user(Login as user)  Time elapsed: 14.354 s  <<< FAILURE!
+org.junit.ComparisonFailure: expected:<[]> but was:<[Zero - Account Summary]>
+
