@@ -30,7 +30,7 @@ formatter.scenario({
   ]
 });
 formatter.before({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
   "name": "the user is on the login page",
@@ -40,7 +40,7 @@ formatter.match({
   "location": "com.zerobank.stepdefinitions.LoginStepDefs.the_user_is_on_the_login_page()"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
   "name": "the user logged in as \"bankManager\"",
@@ -50,7 +50,7 @@ formatter.match({
   "location": "com.zerobank.stepdefinitions.LoginStepDefs.the_user_logged_in_as(java.lang.String)"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
   "name": "the title contains \"Zero - Account Summary\"",
@@ -60,7 +60,7 @@ formatter.match({
   "location": "com.zerobank.stepdefinitions.LoginStepDefs.the_title_contains(java.lang.String)"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
   "name": "user sees the following options",
@@ -77,6 +77,6 @@ formatter.result({
   "status": "undefined"
 });
 formatter.after({
-  "status": "skipped"
+  "status": "passed"
 });
 });

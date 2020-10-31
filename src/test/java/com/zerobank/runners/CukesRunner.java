@@ -13,8 +13,8 @@ import org.junit.runner.RunWith;
         },
         features = "src/test/resources/features",
         glue = "com/zerobank/stepdefinitions",
-        // dryRun = false,
-        dryRun = true,
+         dryRun = false,
+        //dryRun = true,
         tags = "@AccountSummary"
 )
 
