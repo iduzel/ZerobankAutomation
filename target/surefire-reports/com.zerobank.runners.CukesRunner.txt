@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: com.zerobank.runners.CukesRunner
 -------------------------------------------------------------------------------
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 26.292 s - in com.zerobank.runners.CukesRunner
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 25.068 s - in com.zerobank.runners.CukesRunner

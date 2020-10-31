@@ -3,57 +3,18 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2020-10-31T08:05:19.790Z",
-        "line": 4,
-        "name": "Account Summary Page Info",
-        "description": "",
-        "id": ";account-summary-page-info",
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [],
-        "tags": [
-          {
-            "name": "@AccountSummary"
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2020-10-31T08:05:20.166Z",
-        "before": [
-          {
-            "result": {
-              "duration": 4015400,
-              "status": "passed"
-            },
-            "match": {
-              "location": "com.zerobank.stepdefinitions.Hooks.setUp()"
-            }
-          }
-        ],
-        "line": 7,
+        "line": 3,
         "name": "",
         "description": "",
-        "id": ";",
-        "after": [
-          {
-            "result": {
-              "duration": 1329882400,
-              "status": "passed"
-            },
-            "match": {
-              "location": "com.zerobank.stepdefinitions.Hooks.tearDown(io.cucumber.java.Scenario)"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario",
+        "type": "background",
+        "keyword": "Background",
         "steps": [
           {
             "result": {
-              "duration": 12805285900,
-              "status": "passed"
+              "duration": 3998300,
+              "status": "skipped"
             },
-            "line": 8,
+            "line": 4,
             "name": "the user is on the login page",
             "match": {
               "location": "com.zerobank.stepdefinitions.LoginStepDefs.the_user_is_on_the_login_page()"
@@ -62,10 +23,10 @@
           },
           {
             "result": {
-              "duration": 7760138500,
-              "status": "passed"
+              "duration": 3996000,
+              "status": "skipped"
             },
-            "line": 9,
+            "line": 5,
             "name": "the user logged in as \"bankManager\"",
             "match": {
               "arguments": [
@@ -77,72 +38,656 @@
               "location": "com.zerobank.stepdefinitions.LoginStepDefs.the_user_logged_in_as(java.lang.String)"
             },
             "keyword": "Given "
-          },
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-10-31T08:37:51.676Z",
+        "before": [
           {
             "result": {
-              "duration": 2024152500,
-              "status": "passed"
+              "duration": 3002700,
+              "status": "skipped"
             },
-            "line": 10,
-            "name": "the title contains \"Zero - Account Summary\"",
+            "match": {
+              "location": "com.zerobank.stepdefinitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 43,
+        "name": "SavingsAccount Redirect",
+        "description": "",
+        "id": "navigating-to-specific-accounts-in-accounts-activity;\u003caccountsummaryactivities\u003eaccount-redirect;;2",
+        "after": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "match": {
+              "location": "com.zerobank.stepdefinitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 6000600,
+              "status": "skipped"
+            },
+            "line": 35,
+            "name": "the user clicks on \"Savings\" link on the Account Summary page",
             "match": {
               "arguments": [
                 {
-                  "val": "\"Zero - Account Summary\"",
+                  "val": "\"Savings\"",
                   "offset": 19
                 }
               ],
-              "location": "com.zerobank.stepdefinitions.LoginStepDefs.the_title_contains(java.lang.String)"
+              "location": "com.zerobank.stepdefinitions.AccActNavStepDefs.the_user_clicks_on_link_on_the_Account_Summary_page(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2001000,
+              "status": "skipped"
+            },
+            "line": 36,
+            "name": "the Account Activity page should be displayed",
+            "match": {
+              "location": "com.zerobank.stepdefinitions.AccActNavStepDefs.the_Account_Activity_page_should_be_displayed()"
             },
             "keyword": "Then "
           },
           {
             "result": {
+              "duration": 1995400,
+              "status": "skipped"
+            },
+            "line": 37,
+            "name": "Account drop down should have \"Savings\" selected",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Savings\"",
+                  "offset": 30
+                }
+              ],
+              "location": "com.zerobank.stepdefinitions.AccActNavStepDefs.account_drop_down_should_have_selected(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
               "status": "undefined"
             },
-            "line": 11,
-            "name": "user sees the following options",
+            "line": 38,
+            "name": "account closed",
             "match": {},
-            "rows": [
-              {
-                "cells": [
-                  "Cash Accounts"
-                ]
-              },
-              {
-                "cells": [
-                  "Investment Accounts"
-                ]
-              },
-              {
-                "cells": [
-                  "Credit Accounts"
-                ]
-              },
-              {
-                "cells": [
-                  "Loan Accounts"
-                ]
-              }
-            ],
             "keyword": "And "
           }
         ],
         "tags": [
           {
-            "name": "@AccountSummary"
+            "name": "@AccountActivity"
+          },
+          {
+            "name": "@try"
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 999200,
+              "status": "skipped"
+            },
+            "line": 4,
+            "name": "the user is on the login page",
+            "match": {
+              "location": "com.zerobank.stepdefinitions.LoginStepDefs.the_user_is_on_the_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 4998100,
+              "status": "skipped"
+            },
+            "line": 5,
+            "name": "the user logged in as \"bankManager\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"bankManager\"",
+                  "offset": 22
+                }
+              ],
+              "location": "com.zerobank.stepdefinitions.LoginStepDefs.the_user_logged_in_as(java.lang.String)"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-10-31T08:37:52.187Z",
+        "before": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "match": {
+              "location": "com.zerobank.stepdefinitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 44,
+        "name": "BrokerageAccount Redirect",
+        "description": "",
+        "id": "navigating-to-specific-accounts-in-accounts-activity;\u003caccountsummaryactivities\u003eaccount-redirect;;3",
+        "after": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "match": {
+              "location": "com.zerobank.stepdefinitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 10000500,
+              "status": "skipped"
+            },
+            "line": 35,
+            "name": "the user clicks on \"Brokerage\" link on the Account Summary page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Brokerage\"",
+                  "offset": 19
+                }
+              ],
+              "location": "com.zerobank.stepdefinitions.AccActNavStepDefs.the_user_clicks_on_link_on_the_Account_Summary_page(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1996500,
+              "status": "skipped"
+            },
+            "line": 36,
+            "name": "the Account Activity page should be displayed",
+            "match": {
+              "location": "com.zerobank.stepdefinitions.AccActNavStepDefs.the_Account_Activity_page_should_be_displayed()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1997400,
+              "status": "skipped"
+            },
+            "line": 37,
+            "name": "Account drop down should have \"Brokerage\" selected",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Brokerage\"",
+                  "offset": 30
+                }
+              ],
+              "location": "com.zerobank.stepdefinitions.AccActNavStepDefs.account_drop_down_should_have_selected(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 38,
+            "name": "account closed",
+            "match": {},
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@AccountActivity"
+          },
+          {
+            "name": "@try"
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 2999100,
+              "status": "skipped"
+            },
+            "line": 4,
+            "name": "the user is on the login page",
+            "match": {
+              "location": "com.zerobank.stepdefinitions.LoginStepDefs.the_user_is_on_the_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1998300,
+              "status": "skipped"
+            },
+            "line": 5,
+            "name": "the user logged in as \"bankManager\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"bankManager\"",
+                  "offset": 22
+                }
+              ],
+              "location": "com.zerobank.stepdefinitions.LoginStepDefs.the_user_logged_in_as(java.lang.String)"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-10-31T08:37:52.335Z",
+        "before": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "match": {
+              "location": "com.zerobank.stepdefinitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 45,
+        "name": "CheckingAccount Redirect",
+        "description": "",
+        "id": "navigating-to-specific-accounts-in-accounts-activity;\u003caccountsummaryactivities\u003eaccount-redirect;;4",
+        "after": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "match": {
+              "location": "com.zerobank.stepdefinitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 4999700,
+              "status": "skipped"
+            },
+            "line": 35,
+            "name": "the user clicks on \"Checking\" link on the Account Summary page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Checking\"",
+                  "offset": 19
+                }
+              ],
+              "location": "com.zerobank.stepdefinitions.AccActNavStepDefs.the_user_clicks_on_link_on_the_Account_Summary_page(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1999100,
+              "status": "skipped"
+            },
+            "line": 36,
+            "name": "the Account Activity page should be displayed",
+            "match": {
+              "location": "com.zerobank.stepdefinitions.AccActNavStepDefs.the_Account_Activity_page_should_be_displayed()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2001600,
+              "status": "skipped"
+            },
+            "line": 37,
+            "name": "Account drop down should have \"Checking\" selected",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Checking\"",
+                  "offset": 30
+                }
+              ],
+              "location": "com.zerobank.stepdefinitions.AccActNavStepDefs.account_drop_down_should_have_selected(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 38,
+            "name": "account closed",
+            "match": {},
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@AccountActivity"
+          },
+          {
+            "name": "@try"
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 1996600,
+              "status": "skipped"
+            },
+            "line": 4,
+            "name": "the user is on the login page",
+            "match": {
+              "location": "com.zerobank.stepdefinitions.LoginStepDefs.the_user_is_on_the_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1996900,
+              "status": "skipped"
+            },
+            "line": 5,
+            "name": "the user logged in as \"bankManager\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"bankManager\"",
+                  "offset": 22
+                }
+              ],
+              "location": "com.zerobank.stepdefinitions.LoginStepDefs.the_user_logged_in_as(java.lang.String)"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-10-31T08:37:52.400Z",
+        "before": [
+          {
+            "result": {
+              "duration": 998700,
+              "status": "skipped"
+            },
+            "match": {
+              "location": "com.zerobank.stepdefinitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 46,
+        "name": "Credit CardAccount Redirect",
+        "description": "",
+        "id": "navigating-to-specific-accounts-in-accounts-activity;\u003caccountsummaryactivities\u003eaccount-redirect;;5",
+        "after": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "match": {
+              "location": "com.zerobank.stepdefinitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 3995600,
+              "status": "skipped"
+            },
+            "line": 35,
+            "name": "the user clicks on \"Credit Card\" link on the Account Summary page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Credit Card\"",
+                  "offset": 19
+                }
+              ],
+              "location": "com.zerobank.stepdefinitions.AccActNavStepDefs.the_user_clicks_on_link_on_the_Account_Summary_page(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 7999800,
+              "status": "skipped"
+            },
+            "line": 36,
+            "name": "the Account Activity page should be displayed",
+            "match": {
+              "location": "com.zerobank.stepdefinitions.AccActNavStepDefs.the_Account_Activity_page_should_be_displayed()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 3001900,
+              "status": "skipped"
+            },
+            "line": 37,
+            "name": "Account drop down should have \"Credit Card\" selected",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Credit Card\"",
+                  "offset": 30
+                }
+              ],
+              "location": "com.zerobank.stepdefinitions.AccActNavStepDefs.account_drop_down_should_have_selected(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 38,
+            "name": "account closed",
+            "match": {},
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@AccountActivity"
+          },
+          {
+            "name": "@try"
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 1997900,
+              "status": "skipped"
+            },
+            "line": 4,
+            "name": "the user is on the login page",
+            "match": {
+              "location": "com.zerobank.stepdefinitions.LoginStepDefs.the_user_is_on_the_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2001900,
+              "status": "skipped"
+            },
+            "line": 5,
+            "name": "the user logged in as \"bankManager\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"bankManager\"",
+                  "offset": 22
+                }
+              ],
+              "location": "com.zerobank.stepdefinitions.LoginStepDefs.the_user_logged_in_as(java.lang.String)"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-10-31T08:37:52.467Z",
+        "before": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "match": {
+              "location": "com.zerobank.stepdefinitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 47,
+        "name": "LoanAccount Redirect",
+        "description": "",
+        "id": "navigating-to-specific-accounts-in-accounts-activity;\u003caccountsummaryactivities\u003eaccount-redirect;;6",
+        "after": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "match": {
+              "location": "com.zerobank.stepdefinitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 4001300,
+              "status": "skipped"
+            },
+            "line": 35,
+            "name": "the user clicks on \"Loan\" link on the Account Summary page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Loan\"",
+                  "offset": 19
+                }
+              ],
+              "location": "com.zerobank.stepdefinitions.AccActNavStepDefs.the_user_clicks_on_link_on_the_Account_Summary_page(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1001200,
+              "status": "skipped"
+            },
+            "line": 36,
+            "name": "the Account Activity page should be displayed",
+            "match": {
+              "location": "com.zerobank.stepdefinitions.AccActNavStepDefs.the_Account_Activity_page_should_be_displayed()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2004100,
+              "status": "skipped"
+            },
+            "line": 37,
+            "name": "Account drop down should have \"Loan\" selected",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Loan\"",
+                  "offset": 30
+                }
+              ],
+              "location": "com.zerobank.stepdefinitions.AccActNavStepDefs.account_drop_down_should_have_selected(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 38,
+            "name": "account closed",
+            "match": {},
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@AccountActivity"
+          },
+          {
+            "name": "@try"
           }
         ]
       }
     ],
-    "name": "",
+    "name": "Navigating to specific accounts in Accounts Activity",
     "description": "",
-    "id": "",
+    "id": "navigating-to-specific-accounts-in-accounts-activity",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/features/AccountSummary.feature",
+    "uri": "file:src/test/resources/features/AccountActivityNavigation.feature",
     "tags": [
       {
-        "name": "@AccountSummary",
+        "name": "@AccountActivity",
         "type": "Tag",
         "location": {
           "line": 1,

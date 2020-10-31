@@ -35,6 +35,8 @@ Scenario Outline: <AccountSummaryActivities>Account Redirect
   When the user clicks on "<AccountSummaryActivities>" link on the Account Summary page
   Then the Account Activity page should be displayed
   And Account drop down should have "<AccountSummaryActivities>" selected
+  And account closed
+
 
   Examples:
   | AccountSummaryActivities |
